@@ -1,8 +1,8 @@
-Introduction
+#Introduction
 
 The R script run_analysis.R performs the 5 steps described in the course project's definition, and in the same order as described.
 
-First, all the similar data has been merged using the rbind() function. More specifically:
+* First, all the similar data has been merged using the rbind() function. More specifically:
 The features data (X_train and X_test) have been merged into a single data set named "features_data". 
 The subject data (subject_train and subject_test) have been merged into a single data set named "subject". 
 The activity data (Y_train and Y_test) have been merged into a single data set named "activity".
@@ -15,13 +15,13 @@ Note that at each step, the str() and/or the nrow(), ncol() functions have been 
 the raw data and to ensure that the meging is consistent. 
 However, for clarity purposes, these checks have been commented out in the final script.
 
-Second, only the "features_data" columns with measurements on the mean and standard deviation have been selected and saved to a curated data set named "features". 
+* Second, only the "features_data" columns with measurements on the mean and standard deviation have been selected and saved to a curated data set named "features". 
 The first two columns (subject and activity) have been kept, in their respective positions, in the curated "features" set.
 To determine the columns to select, a visual inspection of the features.txt file has been done, and only variables with mean() and std() clearly 
 identified in their name have been retained. Therefore, variables with "FreqMean" or "GravityMean" in their name have been discarded because 
 I have doubts that they correspond to what we are looking for.
 
-Third, I have replaced in the "features" data set, the activity codes (numbered from 1 to 6) with the activity labels read from the file "activity_labels.txt".
+* Third, I have replaced in the "features" data set, the activity codes (numbered from 1 to 6) with the activity labels read from the file "activity_labels.txt".
 Some caution had to be exercised here because the activity_labels were stored in the second column of a data frame, while the first column
 was holding the corresponding numerical codes. 
 
@@ -33,13 +33,13 @@ Three transformations have been applied to these retained variable names in orde
 2) the leading "t"s has been replaced with what it stands for, namely "time" 
 3) same for the leading "f"s which has been replaced with "frequency".
 
-Fifth, I have used the ddply() function, from the "plyr" library, to compute the average of each feature variable (columns 3 to 68 of the "features" set) 
+* Fifth, I have used the ddply() function, from the "plyr" library, to compute the average of each feature variable (columns 3 to 68 of the "features" set) 
 for each subject and each activity. The result has been saved to a set named "tidy".
 
-Variables
+#Variables
 All the column names are described in README.txt data source zip file, except for the following columns that were added:
-subject: represents an indivudual, subject of the experiment.
-activity: represents the activity of the subject while collecting data.
+* subject: represents an indivudual, subject of the experiment.
+* activity: represents the activity of the subject while collecting data.
 
 The features selected for this data set come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
 These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median 
