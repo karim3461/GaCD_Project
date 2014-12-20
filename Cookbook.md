@@ -1,4 +1,4 @@
-#Introduction
+#From raw to tidy data
 
 The R script "run_analysis.R" performs the 5 steps described in the course project's definition, and in the same order as described.
 
