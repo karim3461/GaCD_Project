@@ -23,7 +23,7 @@ Some caution had to be exercised here because the activity_labels were stored in
   + The leading "t"s have been replaced with what they stand for, namely "time",
   + Same for the leading "f"s which have been replaced with "frequency".
 
-* Fifth, I have used the ddply() function, from the "plyr" library, to compute the average of each feature variable (columns 3 to 68 of the "features" set) for each subject and each activity. The result has been saved to a set named "tidy".
+* Fifth, I have used the ddply() function, from the "plyr" library (in the "plyr" package), to compute the average of each feature variable (columns 3 to 68 of the "features" set) for each subject and each activity. The result has been saved to a set named "tidy". Note that in the latest version of RStudio, the "plyr" package comes already installed. So you only need to load the library. Otherwise, install first the package (see the run_analysis.R file for specific code).
 
 #Variables
 All the column names are described in README.txt data source zip file, except for the following columns that were added:
