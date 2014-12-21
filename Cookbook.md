@@ -19,9 +19,9 @@ identified in their name have been retained. Therefore, variables with "FreqMean
 Some caution had to be exercised here because the activity_labels were stored in the second column of a data frame, while the first column was holding the corresponding numerical codes. 
 
 * Fourth, all the data has been appropriately labeled with descriptive variable names. Of course, the first two columns of the curated data set "features" have been named "subject" and "activity", respectively. For columns 3 to the end of the data set (column 68), I have first read all the feature names from the file "features.txt". Then, I have retained only the feature names corresponding to the selected data (columns) in the curated "features" data set. Three transformations have been applied to these retained variable names in order to make them more meaningful:
-+ (1) the trailing parentheses have been removed from the variable names to avoid confusing them with functions, 
-**(2)** the leading "t"s have been replaced with what they stand for, namely "time",
-**(3)** same for the leading "f"s which have been replaced with "frequency".
+  + 1) the trailing parentheses have been removed from the variable names to avoid confusing them with functions, 
+  + 2) the leading "t"s have been replaced with what they stand for, namely "time",
+  + 3) same for the leading "f"s which have been replaced with "frequency".
 
 * Fifth, I have used the ddply() function, from the "plyr" library, to compute the average of each feature variable (columns 3 to 68 of the "features" set) for each subject and each activity. The result has been saved to a set named "tidy".
 
