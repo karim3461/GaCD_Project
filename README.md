@@ -16,7 +16,7 @@ Note that the **run_analysis.R** file that contains all the code to perform the 
 2. Save it in the project directory "UCI_HAR_Datset" you created for this course project. This directory must contain the project raw data downloaded from here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. 
 3. Run the script run_analysis.R using RStudio.
 
-# Checking my tidy output data
+## Checking my tidy output data
 1. Download my **tidy.txt** file.
 4. Read it using something like: tidy <- read.table("./tidy.txt", header = TRUE)
 
