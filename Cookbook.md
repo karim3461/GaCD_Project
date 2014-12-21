@@ -7,7 +7,7 @@ The subject data (subject_train and subject_test) have been merged into a single
 The activity data (Y_train and Y_test) have been merged into a single data set named "activity".
 Then, the "subject", "activity" and "features_data" sets have been merged together, using rbind(), to produce a single data set named "all".
 
-This picture from one of the class forums (https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-333) summarizes the content of my single data set at this stage, with one main difference: the "subject" and "activity" columns 
+This picture from one of the [class forums](https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-333) summarizes the content of my single data set at this stage, with one main difference: the "subject" and "activity" columns 
 have been put at the beginning of the set rather that at the end.
 
 Note that at each step, the str() and/or the nrow(), ncol() functions have been run, before and after the merge, to get an idea about the raw data and to ensure that the merging is consistent. However, for clarity purposes, these checks have been commented out in the final script.
