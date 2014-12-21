@@ -2,13 +2,15 @@
 
 The R script "run_analysis.R" performs the 5 steps described in the course project's definition, and in the same order as described.
 
-* First, all the similar data has been merged using the rbind() function. More specifically: The features data (X_train and X_test) have been merged into a single data set named "features_data". 
+- First, all the similar data has been merged using the rbind() function. More specifically: The features data (X_train and X_test) have been merged into a single data set named "features_data". 
 The subject data (subject_train and subject_test) have been merged into a single data set named "subject". 
 The activity data (Y_train and Y_test) have been merged into a single data set named "activity".
 Then, the "subject", "activity" and "features_data" sets have been merged together, using rbind(), to produce a single data set named "all".
-... This picture from one of the class forums (https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-333) summarizes the content of my single data set at this stage, with one main difference: the "subject" and "activity" columns 
+
+This picture from one of the class forums (https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-333) summarizes the content of my single data set at this stage, with one main difference: the "subject" and "activity" columns 
 have been put at the beginning of the set rather that at the end.
-...Note that at each step, the str() and/or the nrow(), ncol() functions have been run, before and after the merge, to get an idea about the raw data and to ensure that the merging is consistent. However, for clarity purposes, these checks have been commented out in the final script.
+
+Note that at each step, the str() and/or the nrow(), ncol() functions have been run, before and after the merge, to get an idea about the raw data and to ensure that the merging is consistent. However, for clarity purposes, these checks have been commented out in the final script.
 
 * Second, only the "features_data" columns with measurements on the mean and standard deviation have been selected and saved to a curated data set named "features". The first two columns (subject and activity) have been kept, in their respective positions, in the curated "features" set. To determine the columns to select, a visual inspection of the features.txt file has been done, and only variables with mean() and std() clearly 
 identified in their name have been retained. Therefore, variables with "FreqMean" or "GravityMean" in their name have been discarded because I have doubts that they correspond to what we are looking for.
