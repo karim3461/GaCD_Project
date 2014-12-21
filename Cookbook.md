@@ -2,12 +2,12 @@
 
 The R script "run_analysis.R" performs the 5 steps described in the course project's definition, and in the same order as described.
 
-- First, all the similar data has been merged using the rbind() function. More specifically: The features data (X_train and X_test) have been merged into a single data set named "features_data". 
+* First, all the similar data has been merged using the rbind() function. More specifically: The features data (X_train and X_test) have been merged into a single data set named "features_data". 
 The subject data (subject_train and subject_test) have been merged into a single data set named "subject". 
 The activity data (Y_train and Y_test) have been merged into a single data set named "activity".
 Then, the "subject", "activity" and "features_data" sets have been merged together, using rbind(), to produce a single data set named "all".
 
--- This picture from one of the class forums (https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-333) summarizes the content of my single data set at this stage, with one main difference: the "subject" and "activity" columns 
+This picture from one of the class forums (https://class.coursera.org/getdata-016/forum/thread?thread_id=50#comment-333) summarizes the content of my single data set at this stage, with one main difference: the "subject" and "activity" columns 
 have been put at the beginning of the set rather that at the end.
 
 Note that at each step, the str() and/or the nrow(), ncol() functions have been run, before and after the merge, to get an idea about the raw data and to ensure that the merging is consistent. However, for clarity purposes, these checks have been commented out in the final script.
@@ -19,9 +19,9 @@ identified in their name have been retained. Therefore, variables with "FreqMean
 Some caution had to be exercised here because the activity_labels were stored in the second column of a data frame, while the first column was holding the corresponding numerical codes. 
 
 * Fourth, all the data has been appropriately labeled with descriptive variable names. Of course, the first two columns of the curated data set "features" have been named "subject" and "activity", respectively. For columns 3 to the end of the data set (column 68), I have first read all the feature names from the file "features.txt". Then, I have retained only the feature names corresponding to the selected data (columns) in the curated "features" data set. Three transformations have been applied to these retained variable names in order to make them more meaningful:
-1. the trailing parentheses have been removed from the variable names to avoid confusing them with functions, 
-2. the leading "t"s have been replaced with what they stand for, namely "time",
-3. same for the leading "f"s which have been replaced with "frequency".
+**(1)** the trailing parentheses have been removed from the variable names to avoid confusing them with functions, 
+**(2)** the leading "t"s have been replaced with what they stand for, namely "time",
+**(3)** same for the leading "f"s which have been replaced with "frequency".
 
 * Fifth, I have used the ddply() function, from the "plyr" library, to compute the average of each feature variable (columns 3 to 68 of the "features" set) for each subject and each activity. The result has been saved to a set named "tidy".
 
