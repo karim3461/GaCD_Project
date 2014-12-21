@@ -6,9 +6,13 @@ I have written an R script, named "run_analysis.R", to merge and tidy data gathe
 
 ## Files
 
+** README.md** : this file.
+
 **CodeBook.md** describes the variables, the data, and all the steps performed to clean up the data.
 
-Note that the **run_analysis.R** file that contains all the code to perform the transformations required for this project, has been uploaded to the project page rather than here, as per the project instructions. 
+**run_analysis.R** contains all the code to perform the transformations required for this project.
+
+**tidy.txt** contains the tidy output of the script. As per the project instructions, this file has not been uploaded to GitHub but to the project submission page.
 
 ## Running the script
 
