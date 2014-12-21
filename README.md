@@ -1,16 +1,15 @@
-Some big title
-==============
-
 # Introduction
 
 This work is being done for the Coursera "Getting and Cleaning Data" course project.
-I have written an R script, named run_analysis.R, to merge and tidy data gathered from an experiment that was collecting data from the accelerometers Samsung Galaxy S smartphones.
+
+I have written an R script, named "run_analysis.R", to merge and tidy data gathered from an experiment that was collecting data from the accelerometers Samsung Galaxy S smartphones.
 
 
-# Instructions
+# Running the script
 
-1. Clone this repository
-2. change the working directory to getting-cleaning-data-project/ folder
+1. Download my run_analysis.R script file.
+2. Download my tidy.txt file.
+3. Save both of them in the project directory "UCI_HAR_Datset" you created for this project project. This directory must contain the project raw data downloaded from 
 3. Download the data source zip file
 4. Unzip the source zip file: `unzip getdata-projectfiles-UCI\ HAR\ Dataset.zip`
 5. Run run_analysis.R
