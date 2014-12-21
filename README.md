@@ -17,7 +17,7 @@ I have written an R script, named "run_analysis.R", to merge and tidy data gathe
 ## Running the script
 
 1. Download my **run_analysis.R** script file.
-2. Save it in the project directory "UCI_HAR_Datset" you created for this course project. This directory must contain the project raw data downloaded from here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. 
+2. Save it in the project directory "UCI_HAR_Datset" you created for this course project. This directory must contain the project raw data downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
 3. Run the script run_analysis.R using RStudio.
 
 ## Checking my tidy output data
