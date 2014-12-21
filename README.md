@@ -6,7 +6,7 @@ I have written an R script, named "run_analysis.R", to merge and tidy data gathe
 
 ## Files
 
-** README.md** : this file.
+**README.md** : this file.
 
 **CodeBook.md** describes the variables, the data, and all the steps performed to clean up the data.
 
@@ -25,4 +25,4 @@ I have written an R script, named "run_analysis.R", to merge and tidy data gathe
 4. Read it using something like: tidy <- read.table("./tidy.txt", header = TRUE)
 
 ## Processing steps to produce the tidy data
-A detailed explanation of all the processing can be found in the Cookbook file. Check [here](codeBook.md).
+A detailed explanation of all the processing can be found in the Cookbook file. Click here: [https://github.com/karim3461/GaCD_Project/blob/master/Cookbook.md].
