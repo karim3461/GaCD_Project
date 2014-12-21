@@ -86,6 +86,8 @@ names(features) <- c("subject", "activity", as.character(features_names))
 
 
 # 5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+### if the "plyr" package is not already installed in your version of RStudio, uncomment the next line:
+#install.packages("plyr")
 library(plyr)
 tidy <- ddply(features, .(subject, activity), function(x) colMeans(x[,3:68]))
 
